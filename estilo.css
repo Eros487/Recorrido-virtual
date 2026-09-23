@@ -1,7 +1,34 @@
 
 h1 {
-    
+
     font-size: 5em;
     text-align: center;
 
 }
+
+p {
+    font-size: 2em;
+}
+
+#galeria { 
+    background-color: #e6ff04;
+    border: solid #000000 5px;
+    width: 9vw;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; /*Para centrar la galería en la pantalla*/
+    padding: 20px;
+    align-items: center;
+}
+
+.contenedor {
+    height: 800px;
+  display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+#galeria:hover {
+    background-color: #ff8400;
+}
+ 
