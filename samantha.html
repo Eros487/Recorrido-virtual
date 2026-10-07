@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="samantha.css">
 </head>
 <body>
-    
+    <audio id="musica" src="assets/bruja.mp3" loop preload="auto"></audio>
+
+  <script>
+    function activarMusica() {
+      musica.play();
+      document.removeEventListener('mousemove', activarMusica);
+      document.removeEventListener('click', activarMusica);
+      document.removeEventListener('keydown', activarMusica);
+    }
+
+    document.addEventListener('mousemove', activarMusica);
+    document.addEventListener('click', activarMusica);
+    document.addEventListener('keydown', activarMusica);
+
+    </script>
 </body>
 </html>
