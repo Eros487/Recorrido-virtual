@@ -1,9 +1,27 @@
 body {
-    background-image: url(assets/tablero.png);
-    background-size: cover; /* hace que cubra toda la pantalla */
-  background-repeat: no-repeat; /* evita que se duplique */
-  background-position: center center; /* la centra */
-  background-attachment: fixed; /* se queda fija aunque hagas scroll */
-  min-height: 100vh; /* asegura que ocupe el 100% del alto */
+   background-image: url(assets/tablero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   margin: 0;
+  min-height: 100vh;
+}
+
+.contenedor-foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* solo esta caja es la que centra */
+}
+
+.foto {
+  width: 20px; /* pequeña cuando no hay cursor */
+  cursor: pointer;
+  transition: transform 0.1s steps(3); /* muy rápido y con rebote de susto */
+}
+
+.foto:hover {
+  transform: scale(55); /* se hace 4 veces más grande */
+  z-index: 999;
 }

@@ -7,6 +7,25 @@
     <link rel="stylesheet" href="Lorena.css">
 </head>
 <body>
-    
+    <div class="contenedor-foto">
+     <img class="foto" id="foto" src="assets/smile.avif" />
+  </div>
+  <audio id="terror" src="assets/scream.mp3" preload="auto"></audio>
+
+  <script>
+    const foto = document.getElementById('foto');
+    const audio = document.getElementById('terror');
+
+    foto.addEventListener('mouseenter', () => {
+      audio.currentTime = 1;
+      audio.play();
+    });
+    foto.addEventListener('mouseleave', () => {
+      audio.pause();
+      audio.currentTime = 1;
+    });
+  </script>
+  <a href="index.html">Olvidar</a>
+  <a href="nocorrespondido.html">Recordar</a>
 </body>
 </html>
