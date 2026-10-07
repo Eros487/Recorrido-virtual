@@ -1,0 +1,9 @@
+body {
+    background-image: url(assets/tablero.png);
+    background-size: cover; /* hace que cubra toda la pantalla */
+  background-repeat: no-repeat; /* evita que se duplique */
+  background-position: center center; /* la centra */
+  background-attachment: fixed; /* se queda fija aunque hagas scroll */
+  min-height: 100vh; /* asegura que ocupe el 100% del alto */
+  margin: 0;
+}

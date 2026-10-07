@@ -7,4 +7,46 @@ h1 {
      font-size: 5em;
      text-align: center;
 }
-   
+
+h1 {
+background-color: #8a4e03;
+    border: solid #00000024 5px;
+    width: 50vw;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; /*Para centrar la galería en la pantalla*/
+    padding: 20px;
+    align-items: center;
+}
+
+a {
+  writing-mode: vertical-rl; /* los pone verticales */
+  transform: rotate(180deg); /* para que se lean de abajo hacia arriba como libro real */
+  text-decoration: none;
+  color: #f5e6c8;
+  padding: 20px 8px;
+  font-size: 1.2em;
+  font-family: serif;
+  border-left: 3px solid rgba(0,0,0,0.3);
+  border-right: 3px solid rgba(255,255,255,0.2);
+  height: 180px; /* alto del lomo */
+  display: inline-block;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+a:hover {
+  transform: rotate(180deg) translateY(-10px); /* efecto cuando pasas el mouse */
+  transition: 0.3s;
+}
+
+#exes {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#exes a:nth-child(1) { position: absolute; top: 2.4%; left: 78%; height: 120px; background:#8B1E1E; }
+#exes a:nth-child(2) { position: absolute; top: 28%; left: 19%; height: 100px; background:#2C3E50; }
+#exes a:nth-child(3) { position: absolute; top: 21%; left: 45%; height: 150px; background:#6B4226; }
+#exes a:nth-child(4) { position: absolute; top: 55%; left: 60%; height: 180px; background:#1a4d2e; }
