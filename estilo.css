@@ -9,7 +9,9 @@ h1 {
 p {
     font-size: 2em;
 }
-
+a {
+    font-size: 2em;
+}
 #galeria { 
     background-color: #e6ff04;
     border: solid #000000 5px;
@@ -31,4 +33,6 @@ p {
 #galeria:hover {
     background-color: #ff8400;
 }
- 
+
+body {
+    background-image: url(assets/crack.png);
