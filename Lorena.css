@@ -12,16 +12,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh; /* solo esta caja es la que centra */
+  height: 80vh; 
 }
 
 .foto {
-  width: 20px; /* pequeña cuando no hay cursor */
+  width: 20px; 
   cursor: pointer;
-  transition: transform 0.1s steps(3); /* muy rápido y con rebote de susto */
+  transition: transform 0.1s steps(3);
 }
 
 .foto:hover {
-  transform: scale(55); /* se hace 4 veces más grande */
+  transform: scale(55); 
   z-index: 999;
 }
